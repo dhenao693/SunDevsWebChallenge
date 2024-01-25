@@ -15,7 +15,7 @@ import java.util.Map;
 
 import static co.com.web.sundevs.cinemark.userinterfaces.CinemarkHome.BTN_REGISTER;
 import static co.com.web.sundevs.cinemark.userinterfaces.MemberModal.WITHOUT_MEMBER;
-import static co.com.web.sundevs.cinemark.userinterfaces.Register.BTN_OPTION_FROM_LIST;
+import static co.com.web.sundevs.cinemark.userinterfaces.General.BTN_OPTION_FROM_LIST_1;
 import static co.com.web.sundevs.cinemark.userinterfaces.Register.LST_PERSON_TYPE;
 import static co.com.web.sundevs.cinemark.utils.Constants.USER_IN_MEMORY;
 import static co.com.web.sundevs.cinemark.utils.ConvertMapToModel.convertMapToUser;
@@ -33,7 +33,7 @@ public class RegisterUser implements Task {
                 Click.on(BTN_REGISTER),
                 Click.on(WITHOUT_MEMBER),
                 Click.on(LST_PERSON_TYPE),
-                Click.on(BTN_OPTION_FROM_LIST.of(user.getPersonType())),
+                Click.on(BTN_OPTION_FROM_LIST_1.of(user.getPersonType())),
                 Check.whether(user.getPersonType().equals("Natural"))
                         .andIfSo(
                                 FillFormNaturalPerson.toRegister(user)

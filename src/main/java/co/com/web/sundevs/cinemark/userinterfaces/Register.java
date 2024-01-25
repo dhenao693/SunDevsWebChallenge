@@ -8,8 +8,6 @@ import static org.openqa.selenium.By.xpath;
 public class Register {
     public static final Target LST_PERSON_TYPE = Target.the("")
             .located(xpath("//div[@id='register_EducationLevel']/div/div"));
-    public static final Target BTN_OPTION_FROM_LIST = Target.the("")
-            .locatedBy("//li[contains(text(),'{0}')]");
     public static final Target LST_DOCUMENT_TYPE = Target.the("")
             .located(xpath("//div[@id='register_HouseholdIncome']/div/div"));
     public static final Target LBL_NAME = Target.the("")
