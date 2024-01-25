@@ -7,7 +7,7 @@
       When he login in app
         | name   | lastName   | personType   | email   | phone   | address   | gender   | birthdate   | documentType   | documentNumber   | city   | preferredTheater   | password   |
         | <name> | <lastName> | <personType> | <email> | <phone> | <address> | <gender> | <birthdate> | <documentType> | <documentNumber> | <city> | <preferredTheater> | <password> |
-      And he buys some seats for the movie
+      And he buys some seats to the movie
       Then see the correct email
 
       Examples:

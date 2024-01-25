@@ -17,4 +17,6 @@ public class CinemarkHome extends PageObject {
     public static final Target BTN_REGISTER = Target.the("")
             .located(By.xpath("(//*[@title='CREAR CUENTA'])[1]"));
 
+
+
 }
