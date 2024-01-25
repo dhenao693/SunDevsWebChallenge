@@ -90,8 +90,6 @@ public class BuyTicketsToMovie implements Task {
         actor.attemptsTo(WaitImageLoaderAndPage.forSeconds(5));
 
         actor.attemptsTo(FillPaymentForm.withCard(creditCard1));
-
-        System.out.println();
     }
 
     public static BuyTicketsToMovie withCreditCard(List<Map<String, String>> creditCard) {
