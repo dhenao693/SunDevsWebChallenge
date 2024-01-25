@@ -47,7 +47,6 @@ public class FillPaymentForm implements Interaction {
         actor.attemptsTo(Click.on(BTN_ACCEPT));
 
         actor.attemptsTo(WaitImageLoaderAndPage.forSeconds(5));
-        System.out.println();
     }
 
     public static FillPaymentForm withCard(CreditCard creditCard) {

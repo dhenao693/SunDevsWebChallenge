@@ -17,8 +17,8 @@
 #        | 36213800000009   | 1            | Brasil   | CENARES    |
         | 5247081012761500 | 1            | Colombia | DAVIVIENDA |
 #        | 5256780000000007 | 1            | Mexico   | MASTERCARD |
-#        |                  | 1            | Panama   |            |
-#        |                  | 1            | Peru     |            |
+#        | 5455040000000005 | 1            | Panama   | MASTERCARD |
+#        | 377753000000009  | 1            | Peru     | AMEX       |
 
 
 

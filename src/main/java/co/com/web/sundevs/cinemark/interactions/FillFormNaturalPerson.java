@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 
 import static co.com.web.sundevs.cinemark.userinterfaces.Register.*;
 
@@ -29,6 +30,7 @@ public class FillFormNaturalPerson implements Interaction {
                 SelectBirthdate.of(user.getBirthdate()),
                 Enter.theValue(user.getPhone()).into(LBL_PHONE),
                 Enter.theValue(user.getAddress()).into(LBL_ADDRESS),
+                Scroll.to(BTN_ACCEPT_TERMS),
                 Enter.theValue(user.getEmail()).into(LBL_EMAIL),
                 Enter.theValue(user.getEmail()).into(LBL_RETRY_EMAIL),
                 Enter.theValue(user.getPassword()).into(LBL_PASSWORD),
