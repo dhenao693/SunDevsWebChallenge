@@ -1,5 +1,6 @@
 package co.com.web.sundevs.cinemark.utils;
 
+import co.com.web.sundevs.cinemark.models.CreditCard;
 import co.com.web.sundevs.cinemark.models.User;
 
 import java.util.Map;
@@ -24,4 +25,13 @@ public class ConvertMapToModel {
 
     }
 
+    public static CreditCard convertMapToCreditCard(Map<String, String> map) {
+        return CreditCard.builder()
+                .number(map.get("number"))
+                .type(map.get("type"))
+                .country(map.get("country"))
+                .installments(map.get("installments"))
+                .build();
+
+    }
 }

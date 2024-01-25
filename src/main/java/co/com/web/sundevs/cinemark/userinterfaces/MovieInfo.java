@@ -2,7 +2,6 @@ package co.com.web.sundevs.cinemark.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 
-import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
 public class MovieInfo {
@@ -12,8 +11,8 @@ public class MovieInfo {
     public static final Target BTN_FIRTS_SCHEDULE = Target.the("")
             .located(xpath("(//div[@class=\"jsx-1092747776 theaters-detail__container \"]/div)[1]"));
 
-    public static final Target BTN_SEE_SCHEDULES_FIRTS_MOVIE = Target.the("")
-            .located(xpath("(//button[contains(text(),'ver horarios')])[1]"));
+    public static final Target BTN_SEE_SCHEDULES_MOVIE = Target.the("")
+            .located(xpath("(//button[contains(text(),'ver horarios')])[3]"));
 
     public static final Target BTN_CONFIRM_PURCHASE = Target.the("")
             .located(xpath("//span[contains(text(),'CONFIRMAR')]/parent::button"));
